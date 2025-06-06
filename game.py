@@ -31,7 +31,11 @@ pygame.time.set_timer(MOVE_EVENT, 150)
 # 4. Initialize snake
 class SNAKE:
     def __init__(self):
-        self.body = [pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2)]
+        self.body = [pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2),
+                     pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2),
+                     pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2),
+                     pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2),
+                     pygame.math.Vector2(numberOfCell // 2, numberOfCell // 2)]
 
 direction = 0 #0:up; 1:right, 2: down, 3: left;
 snake = SNAKE()
